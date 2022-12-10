@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+.font-20{
+    font-size: 20px!important;
+}
+
+.pos-absolute{
+    position: absolute!important;
+}
+.text-light{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0.4rem 0;
+}
+.darker-when-hover:hover{
+    opacity: .75;
+}
+.main-container{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* height: 100vh; */
+}
+.featured .carousel-control-prev-icon,
+.featured .carousel-control-next-icon{
+    filter: none;
+}
+.featured{
+    width: 100%;
+    max-height: calc(100vh - 58px);
+    overflow: hidden;
+    position: relative;
+}
+.featured-content{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    width: 75%;
+}
+.featured-content>p{
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 1rem 1rem .5rem;
+    text-align: center;
+}
+.featured-content>a{
+    text-decoration: none;
+    width: fit-content;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgba(0,184,252,0.99);
+    padding: .5rem 1rem;
+    border-radius: 3px;
+}
+.featured-content>a:hover{
+    background-color: rgba(16, 154, 203, 0.99);
+}
+.carousel-control-prev-icon{
+    transform: translateX(1rem)
+} .carousel-control-next-icon{
+    transform: translateX(-1rem)
+}
+.navbar{
+    background-color: #2f3132!important;
+}
+.navbar-brand{
+    color: white!important;
+}
+.nav-link{
+    text-align: center;
+    color: white!important;
+}
+/* .nav-link:hover{
+    color: #333!important;
+} */
+.navbar-toggler-icon{
+    color: white!important;
+}
+.login-menu{
+    min-width: 20rem;
+    padding: 1rem;
+}
+.navbar-brand{
+    font-size: 32px!important;
+}
+
+/* CAROUSEL related things (remove colors after testing) */
+.shop-content {
+    height: 600px;
+    margin-top: 80px;
+}
+.items-container {
+    min-height: 500px;
+    padding-top: 80px;
+}
+.items-content {
+    display: flex;
+    flex-grow: 1;
+}
+.items-title {
+    margin: 0 auto;
+    text-align: center;
+}
+.carousel-container {
+    background-color: rgb(255, 255, 255);
+}
+
+
+.c-items {
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: 0 10px;
+    color: white;
+}
+.items-label {
+    position: absolute;
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    /* -webkit-text-stroke: 1px black; */
+    /* z-index: 100; */
+}
+.items-img {
+    /* position: absolute; */
+    width: 100%;
+    height: 250px;
+    /* height: auto; */
+    top: 0;
+    left: 0;
+    border: 1px solid gray;
+    background-color: rgb(63, 63, 63);
+    object-fit: cover;
+    transition: .2s ease-in-out;
+}
+.c-items:hover .items-img{
+    filter: brightness(.7);
+}
+.overlay-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.slick-arrow:not(.prev-btn):not(.next-btn) {
+    background-color: #00B8FC;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    color: black;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    /* text-indent: -9999px; */
+    white-space: nowrap;
+    overflow: hidden;
+}
+.slick-dots li button::before {
+    /* color: #00B8FC!important; */
+    font-size: 10px!important;
+}
+/* .slick-dots li.slick-active button:before {
+    color: #00B8FC;
+} */
+
+.promotion-container-1{
+    background: black url('https://zedligaming.com/wp-content/uploads/2020/08/20617037_10155505657874871_2495346694590449553_o-1.jpg') center no-repeat;
+    height: 75vh;
+}
+
+.promotion-container-2{
+    background: black url('https://sudospaces.com/eshop/2021/07/5-tai-nghe-choi-game-logitech-g-pro-gen-2.png') center no-repeat;
+    height: 65vh;
+}
+
+.grid-container-1{
+    display: grid;
+    grid-template-rows: 50px;
+    grid-auto-rows: minmax(50px, auto);
+}
+
+.grid-container-2{
+    display: grid;
+    grid-template-columns: 5fr 1.5fr 1fr;
+    grid-template-rows: 65vh;
+}
+
+.promotion-title {
+    font-size: 60px;
+    font-weight: bold;
+    width: 100%;
+    justify-self: center;
+    text-align: center;
+    color: white;
+}
+
+.promotion-desc {
+    width: 45%;
+    justify-self: center;
+    text-align: center;
+    color: white;
+}
+
+.purchase-btn {
+    margin-top: 50px;
+    justify-self: center;
+}
+
+.promotion-logo{
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.promotion-logo img{
+    width: 200px;
+    height: 200px;
+}
+
+.promotion-details{
+    color: white;
+    align-self: center;
+    justify-self: center;
+    text-align: left;
+}
+.promotion-details-btn{
+    width: 103.79px;
+    height: 38px;
+}
+footer {
+    background-color: rgb(244,244,244);
+}
+
+.footer-link {
+    text-align: left;
+}
+
+.footer-link-content:hover {
+    text-decoration: underline;
+}
+
+.footer-email-form {
+    padding: 0;
+}
+
+.footer-email-form-content {
+    font-size: 16px;
+}
+
+.footer-email-btn {
+    padding: 0;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.footer-email-btn-content {
+    background-color: rgb(33,37,41);
+    font-size: 16px;
+}
+
+.footer-email-btn-content:hover {
+    background-color: rgb(25, 135, 84);
+    color: white;
+}
+
+.footer-email-check-info {
+    padding-top: 3px;
+    padding-right: 0;
+}
+
+.footer-contact {
+    display: block;
+
+}
+
+.footer-social {
+    margin-right: 0px;
+}
+
+.check-box {
+    min-width: 20px;
+    min-height: 20px;
+    border: rgb(105,113,114) 3px solid;
+    cursor: pointer;
+}
+
+.check-info {
+    text-align: left;
+    font-weight: bold;
+}
+
+.facebook-btn {
+    font-size: 40px;
+    padding: 0;
+    background-color: rgb(244,244,244);
+}
+
+.facebook-btn:hover {
+    color: rgb(59,89,152);
+}
+
+.twitter-btn {
+    font-size: 40px;
+    padding: 0;
+    background-color: rgb(244,244,244);
+}
+
+.twitter-btn:hover {
+    color: rgb(29,161,242);
+}
+
+.instagram-btn {
+    font-size: 40px;
+    padding: 0;
+    background-color: rgb(244,244,244);
+}
+
+.instagram-btn:hover {
+    color: rgb(226,48,108);
+}
+
+.youtube-btn {
+    font-size: 40px;
+    padding: 0;
+    background-color: rgb(244,244,244);
+}
+
+.youtube-btn:hover {
+    color: rgb(245,0,0);
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 320px){
+    .promotion-container-1{
+        height: 90vh;
+    }
+    .promotion-title{
+        font-size: 20px;
+    }
+    .promotion-desc{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .promotion-details-title{
+        font-size: 25px;
+    }
+    .promotion-details-text{
+        font-size: 15px;
+    }
+    .promotion-logo img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .items-container {
+        max-width: 540px;
+    }
+    .shop-content {
+        margin-bottom: 120px;
+    }
+    .items-img {
+        /* position: absolute; */
+        width: 100%;
+        height: 460px;
+        /* height: 320px; */
+        top: 0;
+        left: 0;
+        border: 1px solid gray;
+        background-color: rgb(63, 63, 63);
+        object-fit: cover;
+        transition: .2s ease-in-out;
+    }
+    .overlay-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .carousel-items .slick-next {
+        right: -10px;
+    }
+    .carousel-items .slick-prev {
+        left: -10px;
+    }
+    .promotion-title{
+        font-size: 40px;
+    }
+    .promotion-desc{
+        font-size: 15px;
+    }
+    
+    /* .promotion-logo{
+        width: 10px;
+        height: 10px;
+    } */
+}
+/* @media only screen and (max-width: 1020px) and (min-width: 991px) {
+    .items-container {
+        max-width: 720px;
+    }
+    .shop-content {
+        margin-bottom: 50px;
+    }
+    .items-img {
+        width: 100%;
+        height: 400px;
+    }
+    .overlay-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+} */
+@media only screen and (max-width: 1020px) and (min-width: 771px) {
+    .items-container {
+        max-width: 720px;
+    }
+    .items-img {
+        width: 100%;
+        height: 320px;
+    }
+    .overlay-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
